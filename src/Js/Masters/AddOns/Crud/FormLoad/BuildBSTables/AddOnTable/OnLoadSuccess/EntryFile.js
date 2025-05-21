@@ -2,13 +2,6 @@ import { StartFunc as StartFuncTableFooterSaveButtonId } from "./TableFooterSave
 
 let StartFunc = () => {
     StartFuncTableFooterSaveButtonId();
-    // jFLocalEndFunc();
 };
-
-// let jFLocalEndFunc = () => {
-//     var event = new Event('change');
-
-//     document.getElementById("TableFooterCategoryId").dispatchEvent(event)
-// };
 
 export { StartFunc };

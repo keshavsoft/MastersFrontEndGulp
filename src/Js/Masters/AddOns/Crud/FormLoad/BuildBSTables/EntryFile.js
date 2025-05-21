@@ -1,7 +1,7 @@
-import { StartFunc as StartFuncItemsTable } from "./ItemsTable/EntryFile.js";
+import { StartFunc as StartFuncAddOnsTable } from "./AddOnTable/EntryFile.js";
 
 const StartFunc = () => {
-    StartFuncItemsTable();
+    StartFuncAddOnsTable();
 };
 
 export { StartFunc };
