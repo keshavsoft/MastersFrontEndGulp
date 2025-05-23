@@ -1,26 +1,24 @@
 const StartFunc = () => {
-    let jVarLocalCustomerName = jFLocalFooterCustomerName();
-    let jVarLocalMobile = LocalFuncForjVarLocalFooterMobile();
-    let jVarLocalDOB = jFLocalFooterDOB();
-    let jVarLocalGSTNumber = jFLocalFooterGSTNumber();
-    let jVarLocalCity = jFLocalFooterCity();
-    let jVarLocalOccupation = jFLocalFooterOccupation();
-    let jVarLocalComapanyName = jFLocalFooterComapanyName();
+    let jVarLocalCustomerName = jFLocalFooterCategoryId();
+    let jVarLocalMobile = LocalFuncForjVarLocalFooterItemType();
+    let jVarLocalDOB = jFLocalFooterItemService();
+    let jVarLocalGSTNumber = jFLocalFooterItemName();
+    let jVarLocalCity = jFLocalFooterPcs();
+    let jVarLocalOccupation = jFLocalFooterRate();
 
     let LocalObj = {};
-    LocalObj.CustomerName = jVarLocalCustomerName;
-    LocalObj.Mobile = jVarLocalMobile;
-    LocalObj.DOB = jVarLocalDOB;
-    LocalObj.GSTNumber = jVarLocalGSTNumber;
-    LocalObj.City = jVarLocalCity;
-    LocalObj.Occupation = jVarLocalOccupation;
-    LocalObj.CompanyName = jVarLocalComapanyName;
+    LocalObj.Category = jVarLocalCustomerName;
+    LocalObj.ItemType = jVarLocalMobile;
+    LocalObj.Service = jVarLocalDOB;
+    LocalObj.ItemName = jVarLocalGSTNumber;
+    LocalObj.Pcs = jVarLocalCity;
+    LocalObj.DryWashRate = jVarLocalOccupation;
 
     return LocalObj;
 };
 
-let jFLocalFooterCustomerName = () => {
-    let jVarLocalTableFooterRateInputId = 'FooterCustomerName'
+let jFLocalFooterCategoryId = () => {
+    let jVarLocalTableFooterRateInputId = 'FooterCategoryId'
     let jVarLocalHtmlId = document.getElementById(jVarLocalTableFooterRateInputId);
 
     if (jVarLocalHtmlId === null === false) {
@@ -28,57 +26,49 @@ let jFLocalFooterCustomerName = () => {
     };
 };
 
-let LocalFuncForjVarLocalFooterMobile = () => {
-    let jVarLocalFooterMobile = 'FooterMobile'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterMobile);
+let LocalFuncForjVarLocalFooterItemType = () => {
+    let jVarLocalFooterItemType = 'FooterItemType'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterItemType);
 
     if (jVarLocalHtmlId === null === false) {
         return jVarLocalHtmlId.value.trim();
     };
 };
 
-let jFLocalFooterDOB = () => {
-    let jVarLocalFooterDOB = 'FooterDOB'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterDOB);
+let jFLocalFooterItemService = () => {
+    let jVarLocalFooterItemService = 'FooterItemService'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterItemService);
 
     if (jVarLocalHtmlId === null === false) {
     return jVarLocalHtmlId.value.trim();
     };
 };
 
-let jFLocalFooterGSTNumber = () => {
-    let jVarLocalFooterGSTNumber = 'FooterGSTNumber'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterGSTNumber);
+let jFLocalFooterItemName = () => {
+    let jVarLocalFooterItemName = 'FooterItemName'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterItemName);
 
     if (jVarLocalHtmlId === null === false) {
     return jVarLocalHtmlId.value.trim();
     };
 };
 
-let jFLocalFooterCity = () => {
-    let jVarLocalFooterCity = 'FooterCity'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterCity);
+let jFLocalFooterPcs = () => {
+    let jVarLocalFooterPcs = 'FooterPcs'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterPcs);
 
     if (jVarLocalHtmlId === null === false) {
     return jVarLocalHtmlId.value.trim();
     };
 };
 
-let jFLocalFooterOccupation = () => {
-    let jVarLocalFooterOccupation = 'FooterOccupation'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterOccupation);
+let jFLocalFooterRate = () => {
+    let jVarLocalFooterRate = 'FooterRate'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterRate);
 
     if (jVarLocalHtmlId === null === false) {
     return jVarLocalHtmlId.value.trim();
     };
 };
 
-let jFLocalFooterComapanyName = () => {
-    let jVarLocalFooterComapanyName = 'FooterComapanyName'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalFooterComapanyName);
-
-    if (jVarLocalHtmlId === null === false) {
-    return jVarLocalHtmlId.value.trim();
-    };
-};
 export { StartFunc }

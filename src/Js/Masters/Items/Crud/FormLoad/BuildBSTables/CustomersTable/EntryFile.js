@@ -9,7 +9,7 @@ const StartFunc = () => {
         data: [],
         onPostBody: function () {
             StartFuncOnLoadSuccess();
-            $("#FooterCustomerName").focus();
+            $("#FooterCategoryId").focus();
         },
         // onClickRow: StartFuncOnClickRowFunc
     });

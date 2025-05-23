@@ -1,4 +1,4 @@
-import { StartFunc as StartFuncFormLoad } from "./FormLoad/startFunc.js";
+import { StartFunc as StartFuncFormLoad } from "./FormLoad/StartFunc.js";
 
 const StartFunc = () => {
     let jVarLocalFromAdmin = true;

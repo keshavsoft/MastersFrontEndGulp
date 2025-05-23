@@ -46,10 +46,10 @@
                 <div class="card-body">
                     <form onsubmit="return false" id="FormId">
                         <div class="row ColumnsRow">
-                            <div class="col-md-12">
-                                <label class="col-md-4 col-form-label">Category</label>
-                                <div class="col-md-8">
-                                    <select name="Category" class="form-select" required autofocus>
+                            <div class="col-12">
+                                <label class="col-12 col-form-label">Category</label>
+                                <div class="col-xl-3">
+                                    <select name="Category" class="form-select" id="CategoryId" required autofocus>
                                         <option value="">Select Category</option>
                                         <option value="Men">Men</option>
                                         <option value="Women">Women</option>
@@ -61,21 +61,41 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <label class="col-md-4 col-form-label">Item Name</label>
-                                <div class="col-md-8">
-                                    <input name="ItemName" type="text" class="form-control" autocomplete="off"
-                                        list="ItemNameDataListId" required>
-                                    <datalist id="ItemNameDataListId">
-                                    </datalist>
+                            <div class="col-12">
+                                <label class="col-12 col-form-label">Item Type</label>
+                                <div class="col-xl-3">
+                                    <select id="ItemTypeSelectId" class="form-select" name="ItemType" required>
+                                        <option value="">Select Item Type</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        ItemType Should not be empty!!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="col-12 col-form-label">Item Service</label>
+                                <div class="col-xl-3">
+                                    <select id="ItemServiceSelectId" class="form-select" name="Service" required>
+                                        <option value="">Select Service</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Item Service Should not be empty!!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <label class="col-12 col-form-label">Item Name</label>
+                                <div class="col-xl-5">
+                                    <input id="ItemNameInputId" class="form-control" name="ItemName" readonly>
+                                    </input>
                                     <div class="invalid-feedback">
                                         Item Name Should not be empty!!
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <label class="col-md-4 col-form-label">Pcs</label>
-                                <div class="col-md-8">
+                            <div class="col-12">
+                                <label class="col-12 col-form-label">Pcs</label>
+                                <div class="col-xl-1 col-5">
                                     <input name="Pcs" id="Pcs" min="1" max="100" type="number" class="form-control"
                                         autocomplete="off">
                                     <div class="invalid-feedback">
@@ -83,26 +103,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <label class="col-md-4 col-form-label">Service</label>
-                                <div class="col-md-8">
-                                    <input name="Service" type="text" class="form-control" autocomplete="off">
-                                    <div class="invalid-feedback">
 
-                                        Service Should not be empty!!
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label class="col-md-4 col-form-label">Rate</label>
-                                <div class="col-md-8">
+                            <div class="col-12">
+                                <label class="col-12 col-form-label">Rate</label>
+                                <div class="col-xl-2 col-8">
                                     <input name="DryWashRate" id="DryWashRate" min="1" max="1000" type="number"
                                         class="form-control" autocomplete="off" required>
                                     <div class="invalid-feedback">
-
                                         WashRate Should not be empty!!
-
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +140,7 @@
     "path": "../../.."
     })
 
-    <script type="module" src="../../../Js/Masters/Items/Create/startFunc.js"></script>
+    <script type="module" src="../../../Js/Masters/Items/ItemNamesCreate/StartFunc.js"></script>
 </body>
 
 </html>
