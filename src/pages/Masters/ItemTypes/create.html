@@ -1,0 +1,96 @@
+<!--
+
+=========================================================
+* Volt Free - Bootstrap 5 Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2021 Themesberg (https://www.themesberg.com)
+* License (https://themesberg.com/licensing)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./Masters/ItemTypes/_head.html', {
+    "path": "../../..",
+    "title": "Volt Free Bootstrap Dashboard - Bootstrap Tables"
+    })
+</head>
+
+<body>
+    @@include('./Masters/ItemTypes/_nav.html', {
+    "path": "../../.."
+    })
+
+    @@include('./Masters/ItemTypes/_sidenav.html', {
+    "path": "../../..",
+    "page": "Create",
+    "page_group":"ItemTypes"
+    })
+
+    <main class="content">
+
+        @@include('./Masters/ItemTypes/_topbar.html', {
+        "path": "../../.."
+        })
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <form onsubmit="return false" id="FormId">
+                        <div class="row ColumnsRow">
+
+                            <div class="col-md-12">
+                                <label class="col-md-4 col-form-label">ItemType</label>
+
+                                <div class="col-md-8">
+
+                                    <input name="ItemType" type="text" class="form-control" autocomplete="off"
+                                        list="ItemNameDataListId" required autofocus>
+                                    <datalist id="ItemNameDataListId">
+                                    </datalist>
+
+                                    <div class="invalid-feedback">
+
+                                        ItemType Should not be empty!!
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-10">
+                                <button id="SaveButtonId" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- <div id="responseAlert" class="alert alert-info alert-dismissible fade show d-none mt-3"
+                        role="alert">
+                        <span class="alert-message"></span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        @@include('./Masters/ItemTypes/_footer.html', {
+        "path": "../../..",
+        "classes": "bg-gray-800 text-white"
+        })
+    </main>
+
+    @@include('./Masters/ItemTypes/_scripts.html', {
+    "path": "../../.."
+    })
+
+    <script type="module" src="../../../Js/Masters/ItemTypes/Create/startFunc.js"></script>
+</body>
+
+</html>
