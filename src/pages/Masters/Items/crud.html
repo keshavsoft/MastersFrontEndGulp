@@ -63,46 +63,57 @@
                                 <tr>
                                     <th data-field="KS-Serial" data-formatter="jFGlobalSerialColumn" data-width="50">#
                                     </th>
-                                    <th data-field="CustomerName" data-width="200">Customer Name</th>
-                                    <th data-field="Mobile" data-width="150">Mobile</th>
-                                    <th data-field="DOB" data-width="90">DOB</th>
-                                    <th data-field="GSTNumber" data-width="100">GST Number</th>
-                                    <th data-field="City" data-width="200">City</th>
-                                    <th data-field="Occupation" data-width="200">Occupation</th>
-                                    <th data-field="CompanyName" data-width="250">Company Name</th>
+                                    <th data-field="Category" data-width="200">Category</th>
+                                    <th data-field="ItemType" data-width="150">Item Type</th>
+                                    <th data-field="Service" data-width="90">Item Service</th>
+                                    <th data-field="ItemName" data-width="100">Item Name</th>
+                                    <th data-field="Pcs" data-width="200">Pcs</th>
+                                    <th data-field="DryWashRate" data-width="200">Rate</th>
                                     <th data-width="100">Opts.</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th></th>
+                                    <!-- Category Dropdown -->
                                     <th>
-                                        <input type="text" class="form-control" id="FooterCustomerName"
+                                        <select name="Category" class="form-select" id="FooterCategoryId" required>
+                                            <option value="">Select Category</option>
+                                            <option value="Men">Men</option>
+                                            <option value="Women">Women</option>
+                                            <option value="Kids">Kids</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Category Should not be empty!!
+                                        </div>
+                                    </th>
+                                    
+                                    <th>
+                                        <input type="text" class="form-control" id="FooterItemType"
+                                            placeholder="Enter Item Type">
+                                    </th>
+                                    
+                                    <th>
+                                        <input type="text" class="form-control" id="FooterItemService"
+                                            placeholder="Enter Service">
+                                    </th>
+                                    
+                                    <th>
+                                        <input type="text" class="form-control" id="FooterItemName"
                                             placeholder="Enter Name">
                                     </th>
+                                    
                                     <th>
-                                        <input type="text" class="form-control" id="FooterMobile"
-                                            placeholder="Enter Mobile">
+                                        <input type="number" class="form-control" id="FooterPcs"
+                                            placeholder="Enter Pcs">
                                     </th>
+                                    
                                     <th>
-                                        <input type="date" class="form-control" id="FooterDOB">
+                                        <input type="number" class="form-control" id="FooterRate"
+                                            placeholder="Enter Rate">
                                     </th>
-                                    <th>
-                                        <input type="text" class="form-control" id="FooterGSTNumber"
-                                            placeholder="Enter GST Number">
-                                    </th>
-                                    <th>
-                                        <input type="text" class="form-control" id="FooterCity"
-                                            placeholder="Enter City">
-                                    </th>
-                                    <th>
-                                        <input type="text" class="form-control" id="FooterOccupation"
-                                            placeholder="Enter Occupation">
-                                    </th>
-                                    <th>
-                                        <input type="text" class="form-control" id="FooterComapanyName"
-                                            placeholder="Enter Company Name">
-                                    </th>
+                                    
                                     <th class="text-start">
                                         <button class="btn btn-outline-success" type="button"
                                             id="TableFooterSaveButtonId">
@@ -112,6 +123,7 @@
                                 </tr>
                             </tfoot>
                         </table>
+
                     </div>
                 </div>
             </div>

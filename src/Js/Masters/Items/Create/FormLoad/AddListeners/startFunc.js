@@ -1,4 +1,4 @@
-import { StartFunc as SaveButtonId } from "./SaveButtonId/entryFile.js";
+import { StartFunc as SaveButtonId } from "./SaveButtonId/EntryFile.js";
 
 let StartFunc = () => {
     SaveButtonId();

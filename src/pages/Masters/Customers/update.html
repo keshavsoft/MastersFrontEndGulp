@@ -49,8 +49,8 @@
                             <div class="col-md-12">
                                 <label class="col-md-4 col-form-label">Customer Name</label>
                                 <div class="col-md-8">
-                                    <input name="CustomerName" type="text" class="form-control" autocomplete="off"
-                                        list="CustomerNameDataListId" required
+                                    <input name="CustomerName" type="text" class="form-control" id="CustomerName"
+                                        autocomplete="off" list="CustomerNameDataListId" required
                                         oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s]/g, '')" autofocus>
                                     <datalist id="CustomerNameDataListId">
                                     </datalist>
@@ -87,7 +87,8 @@
                             <div class="col-md-12">
                                 <label class="col-md-4 col-form-label">GSTNumber</label>
                                 <div class="col-md-8">
-                                    <input name="GSTNumber" type="text" class="form-control" autocomplete="off">
+                                    <input name="GSTNumber" type="text" class="form-control" id="Gst"
+                                        autocomplete="off">
                                     <div class="invalid-feedback">
                                         GSTNumber Should not be empty!!
                                     </div>
@@ -96,7 +97,8 @@
                             <div class="col-md-12">
                                 <label class="col-md-4 col-form-label">Location</label>
                                 <div class="col-md-8">
-                                    <input name="City" type="text" class="form-control" autocomplete="off">
+                                    <input name="City" type="text" class="form-control" autocomplete="off"
+                                        id="Location">
                                     <div class="invalid-feedback">
                                         Location Should not be empty!!
                                     </div>
@@ -105,7 +107,8 @@
                             <div class="col-md-12">
                                 <label class="col-md-4 col-form-label">Occupation</label>
                                 <div class="col-md-8">
-                                    <input name="Occupation" type="text" class="form-control" autocomplete="off">
+                                    <input name="Occupation" type="text" id="Occupation" class="form-control"
+                                        autocomplete="off">
                                     <div class="invalid-feedback">
                                         Occupation Should not be empty!!
                                     </div>
@@ -114,7 +117,8 @@
                             <div class="col-md-12">
                                 <label class="col-md-4 col-form-label">CompanyName</label>
                                 <div class="col-md-8">
-                                    <input name="CompanyName" type="text" class="form-control" autocomplete="off">
+                                    <input name="CompanyName" type="text" id="CompanyName" class="form-control"
+                                        autocomplete="off">
                                     <div class="invalid-feedback">
                                         CompanyName Should not be empty!!
                                     </div>
