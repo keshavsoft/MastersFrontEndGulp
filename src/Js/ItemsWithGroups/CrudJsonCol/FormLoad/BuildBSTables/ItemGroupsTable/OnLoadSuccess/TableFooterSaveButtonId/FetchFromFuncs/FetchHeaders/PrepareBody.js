@@ -4,9 +4,9 @@ const StartFunc = () => {
     let jVarLocalItemGroup = jFLocalTableFooterItemGroupInputId();
 
     let LocalObj = {};
-    LocalObj.ItemName = jVarLocalItemName;
-    LocalObj.ItemCategory = jVarLocalItemCategory;
-    LocalObj.ItemGroup = jVarLocalItemGroup;
+    LocalObj.ITEMNAME = jVarLocalItemName;
+    LocalObj.ITEMCATEGORY = jVarLocalItemCategory;
+    LocalObj.ITEMGROUP = jVarLocalItemGroup;
 
     return LocalObj;
 };
