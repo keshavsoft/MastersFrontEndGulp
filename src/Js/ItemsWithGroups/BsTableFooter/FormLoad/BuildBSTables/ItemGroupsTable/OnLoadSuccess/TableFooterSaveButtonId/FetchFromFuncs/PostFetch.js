@@ -1,8 +1,8 @@
 import { StartFunc as StartFuncFetchHeaders } from "./FetchHeaders/EntryFile.js";
 import ConfigJson from "../../../../../../Config.json" with { type: "json" };
-let StartFunc = async () => {
+let StartFunc = async (event) => {
     let jVarLocalPostUrl = ConfigJson.PostEndPoint;
-    let jVarLocalFetchHeaders = StartFuncFetchHeaders();
+    let jVarLocalFetchHeaders = StartFuncFetchHeaders(event);
     let jVarLocalFetchUrl = `${jVarLocalPostUrl}`;
     let response = await fetch(jVarLocalFetchUrl, jVarLocalFetchHeaders);
 

@@ -1,39 +1,20 @@
-const StartFunc = () => {
-    let jVarLocalItemName = jFLocalTableFooterItemNameInputId();
-    let jVarLocalItemCategory = jVarLocalTableFooterItemCategoryInputId();
-    let jVarLocalItemGroup = jFLocalTableFooterItemGroupInputId();
+const StartFunc = (event) => {
+    const jVarLocalCurrentTarget = event.currentTarget;
+    const jVarLocalClosestTr = jVarLocalCurrentTarget.closest("tr");
+    const jVarLocalInputs = jVarLocalClosestTr.querySelectorAll("input");
 
-    let LocalObj = {};
-    LocalObj.ItemName = jVarLocalItemName;
-    LocalObj.ItemCategory = jVarLocalItemCategory;
-    LocalObj.ItemGroup = jVarLocalItemGroup;
-
-    return LocalObj;
+    let jVarLocalPostObject = jFLocalPreparePostBody({ inQuerySelectorAll: jVarLocalInputs });
+    return jVarLocalPostObject
 };
 
-let jFLocalTableFooterItemNameInputId = () => {
-    let jVarLocalTableFooterRateInputId = 'TableFooterItemNameInputId'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalTableFooterRateInputId);
+const jFLocalPreparePostBody = ({ inQuerySelectorAll }) => {
+    let jVarLocalReturnObject = {};
 
-    if (jVarLocalHtmlId === null === false) {
-        return jVarLocalHtmlId.value.trim();
-    };
+    inQuerySelectorAll.forEach(LoopItem => {
+        jVarLocalReturnObject[LoopItem.name] = LoopItem.value;
+    });
+
+    return jVarLocalReturnObject;
 };
 
-let jVarLocalTableFooterItemCategoryInputId = () => {
-    let jVarLocalTableFooterItemCategoryInputId = 'TableFooterItemCategoryInputId'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalTableFooterItemCategoryInputId);
-
-    if (jVarLocalHtmlId === null === false) {
-        return jVarLocalHtmlId.value.trim();
-    };
-};
-let jFLocalTableFooterItemGroupInputId = () => {
-    let jVarLocalTableFooterItemGroupInputId = 'TableFooterItemGroupInputId'
-    let jVarLocalHtmlId = document.getElementById(jVarLocalTableFooterItemGroupInputId);
-
-    if (jVarLocalHtmlId === null === false) {
-        return jVarLocalHtmlId.value.trim();
-    };
-};
 export { StartFunc }
