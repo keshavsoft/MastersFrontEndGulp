@@ -1,9 +1,9 @@
 let StartFunc = ({ inDataToShow }) => {
    let jVarLocalData = inDataToShow;
 
-   jFLocalToInputItemName({ inItemName: jVarLocalData.ItemName });
-   jFLocalToInputItemCategory({ inItemCategory: jVarLocalData.ItemCategory });
-   jFLocalToInputItemGroup({ inItemGroup: jVarLocalData.ItemGroup });
+   jFLocalToInputItemName({ inItemName: jVarLocalData.ITEMNAME });
+   jFLocalToInputItemCategory({ inItemCategory: jVarLocalData.ITEMCATEGORY });
+   jFLocalToInputItemGroup({ inItemGroup: jVarLocalData.ITEMGROUP });
 
 };
 

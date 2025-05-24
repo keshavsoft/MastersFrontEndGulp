@@ -14,22 +14,21 @@
             "formatter": "jFLocalSerialColumn"
         },
         {
-            "field": "ItemName",
+            "field": "ITEMNAME",
             "title": "Item Name"
         },
         {
-            "field": "ItemCategory",
+            "field": "ITEMCATEGORY",
             "title": "Item Category"
         },
         {
-            "field": "ItemGroup",
+            "field": "ITEMGROUP",
             "title": "Item Group"
         },
         {
             "field": "Alter",
             "title": "Alter ",
             "formatter": "jFLocalOptsFormater"
-
         }
     ]
 }
