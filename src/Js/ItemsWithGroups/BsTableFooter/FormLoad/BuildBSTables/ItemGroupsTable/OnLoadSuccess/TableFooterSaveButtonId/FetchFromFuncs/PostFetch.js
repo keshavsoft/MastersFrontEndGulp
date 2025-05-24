@@ -1,5 +1,6 @@
 import { StartFunc as StartFuncFetchHeaders } from "./FetchHeaders/EntryFile.js";
-import ConfigJson from "../../../../../../Config.json" with { type: "json" };
+import ConfigJson from "../../../../../../config.json" with { type: "json" };
+
 let StartFunc = async (event) => {
     let jVarLocalPostUrl = ConfigJson.PostEndPoint;
     let jVarLocalFetchHeaders = StartFuncFetchHeaders(event);

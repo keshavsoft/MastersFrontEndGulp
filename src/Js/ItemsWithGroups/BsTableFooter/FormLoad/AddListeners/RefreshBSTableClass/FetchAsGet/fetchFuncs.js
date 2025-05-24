@@ -1,7 +1,7 @@
-import getUrlJson from './getUrl.json' with {type: 'json'};
+import ConfigJson from '../../../../config.json' with {type: 'json'};
 
 let StartFunc = async () => {
-    let jVarLocalFetchUrl = getUrlJson.GetEndPoint;
+    let jVarLocalFetchUrl = ConfigJson.GetEndPoint;
 
     let response = await fetch(jVarLocalFetchUrl);
 

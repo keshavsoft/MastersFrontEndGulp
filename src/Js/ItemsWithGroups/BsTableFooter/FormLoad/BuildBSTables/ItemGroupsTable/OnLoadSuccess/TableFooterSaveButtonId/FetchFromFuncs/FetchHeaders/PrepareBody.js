@@ -4,6 +4,7 @@ const StartFunc = (event) => {
     const jVarLocalInputs = jVarLocalClosestTr.querySelectorAll("input");
 
     let jVarLocalPostObject = jFLocalPreparePostBody({ inQuerySelectorAll: jVarLocalInputs });
+
     return jVarLocalPostObject
 };
 
